@@ -1,0 +1,23 @@
+:root {
+	--elem-width: 30%;
+	--elem-border: 2px solid brown;
+	--elem-height: 30%;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	height: 100vh;
+}
+.result-out {
+	width: var(--elem-width);
+	height: var(--elem-width);
+	border: var(--elem-border);
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

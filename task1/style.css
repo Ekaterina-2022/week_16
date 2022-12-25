@@ -1,0 +1,43 @@
+* {
+	font-size: 1em;
+	background-color: burlywood;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	flex-wrap: wrap;
+}
+.numbers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.enter-input {
+	width: 250px;
+	height: 40px;
+}
+.next-number {
+	height: 40px;
+}
+.next-number:hover {
+	background-color: coral;
+}
+.btn-result {
+	height: 30px;
+	background-color: chocolate;
+}
+.btn-result:hover {
+	background-color: crimson;
+}
+.new-array {
+	width: 30%;
+	border: 1px dashed red;
+	height: fit-content;
+}
+.sum-array {
+	border: 1px dotted rgb(76, 0, 255);
+	width: 30%;
+	height: fit-content;
+}

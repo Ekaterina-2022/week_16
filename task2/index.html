@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<label for=""
+				>Калькулятор стоимости автомобиля
+				<form action="" class="auto-form">
+					<div class="section">
+						<label class="form-labels" for=""
+							>Выбрать марку автомобиля<br />
+							<select name="car-brands" id="brands">
+								<option value="500000">LADA</option>
+								<option value="3000000">VOLVO</option>
+								<option value="2000000">Jeep</option>
+							</select></label
+						>
+					</div>
+					<div class="section">
+						Год выпуска<br />
+						<label for=""
+							><input
+								class="car-age"
+								type="radio"
+								name="year"
+								value="50000"
+								checked
+							/>1995-2005</label
+						><br />
+						<label for=""
+							><input
+								class="car-age"
+								type="radio"
+								name="year"
+								value="75000"
+							/>2006-2015</label
+						><br />
+						<label for=""
+							><input
+								class="car-age"
+								type="radio"
+								name="year"
+								value="100000"
+							/>2016-2022</label
+						>
+					</div>
+					<div class="section">
+						Двигатель<br />
+						<label for=""
+							><input
+								class="car-engine"
+								type="radio"
+								name="engine"
+								value="50000"
+								checked
+							/>Бензин</label
+						><br />
+						<label for=""
+							><input
+								class="car-engine"
+								type="radio"
+								name="engine"
+								value="70000"
+							/>Дизель</label
+						>
+					</div>
+					<div class="section">
+						Дополнительная информация<br />
+						<label for=""
+							><input
+								class="car-adds"
+								type="checkbox"
+								name="option1"
+								value="50000"
+							/>Без пробега</label
+						><br />
+						<label for=""
+							><input
+								class="car-adds"
+								type="checkbox"
+								name="option2"
+								value="30000"
+							/>30000</label
+						><br />
+						<label for=""
+							><input
+								class="car-adds"
+								type="checkbox"
+								name="option3"
+								value="35000"
+							/>Вместительный багажник</label
+						><br />
+						<label for=""
+							><input
+								class="car-adds"
+								type="checkbox"
+								name="option4"
+								value="25000"
+							/>Просторный задний ряд</label
+						><br />
+						<label for=""
+							><input
+								class="car-adds"
+								type="checkbox"
+								name="option5"
+								value="55000"
+							/>Кожаный салон</label
+						>
+					</div>
+					<button class="btn-result" type="button">Рассчитать</button>
+					<div class="price">Стоимость</div>
+				</form>
+			</label>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
