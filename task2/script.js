@@ -3,18 +3,15 @@ let btnResult = document.querySelector(".btn-result");
 let carBrand = document.querySelector("#brands");
 let carAge = form.elements.year;
 let carEngine = form.elements.engine;
-let carOptions = document.querySelector(".car-adds");
+let carOptions = document.querySelectorAll(".car-adds");
 let sumPrice;
 let finalPrice = document.querySelector(".price");
-let brandPrice;
+let add = document.querySelector("#add");
 let brandPrice2;
 let brandPrice1;
-
-function brand() {
-	brandPrice = carBrand.value;
-	return brandPrice;
-}
-
+let brandPrice3;
+let checkedArray = [];
+let counter;
 function carYears() {
 	for (let i = 0; i < carAge.length; i++) {
 		if (carAge[i].checked) {
@@ -32,20 +29,31 @@ function carEngines() {
 		}
 	}
 }
-/*function addOptions() {
-	let brandPrice3 = 0;
+function addOptions() {
 	for (let i = 0; i < carOptions.length; i++) {
-		
-	}
-
 		if (carOptions[i].checked) {
-			brandPrice3 += carOptions[i].value;
-			break;
-			//console.log(brandPrice);
+			checkedArray.push(carOptions[i].value);
 		}
 	}
+}
+/*function addOptionsDel() {
+	for (let i = 0; i < carOptions.length; i++) {
+		if (carOptions[i].unchecked) {
+			checkedArray.pop(carOptions[i].value);
+		}
+	}
+}*/
+add.addEventListener("click", addOptions);
+//add.addEventListener("click", addOptionsDel);
 btnResult.addEventListener("click", function () {
-	sumPrice = brandPrice;
+	counter = 0;
+	for (let number of checkedArray) {
+		counter = counter + +number;
+	}
+});
+
+btnResult.addEventListener("click", function () {
+	sumPrice = +carBrand.value + +carAge.value + +carEngine.value + counter;
 	finalPrice.innerHTML = sumPrice;
 });
-*/
+console.log(checkedArray);
